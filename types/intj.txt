@@ -1,0 +1,5 @@
+[INTJ]
+Introverted Intuition (Ni):
+Extroverted Thinking (Te):
+Introverted Feeling (Fi):
+Extroverted Sensing (Se):

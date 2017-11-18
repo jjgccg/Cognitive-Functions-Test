@@ -1,0 +1,5 @@
+[ISTP]
+Introverted Thinking (Ti):
+Extroverted Sensing (Se):
+Introverted Intuition (Ni):
+Extroverted Feeling (Fe):

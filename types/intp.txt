@@ -1,0 +1,5 @@
+[INTP]
+Introverted Thinking (Ti):
+Extroverted Intuition (Ne):
+Introverted Sensing (Si):
+Extroverted Feeling (Fe):
