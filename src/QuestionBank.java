@@ -5,12 +5,14 @@ import java.util.HashMap;
 public class QuestionBank {
     private ArrayList<FunctionData> questions;
     private HashMap<String, Integer> functionCount;
+    private int totalPoints;
 
     /* Default constructor stores all 48 questions into class variable*/
     public QuestionBank()
     {
         this.questions = new ArrayList<FunctionData>();
         this.functionCount = new HashMap<String, Integer>();
+        this.totalPoints = 0;
     }
 
     // Initialize all 48 questions with their associated function
@@ -83,15 +85,14 @@ public class QuestionBank {
         FunctionData fd10 = new FunctionData(q10, f10,0);
         questions.add(fd10);
 
-        String q11 = "You tend to keep your logical conclusions to yourself, indirectly leading others to these conclusions\n" +
-                " through questioning and sharing your perceptions.";
+        String q11 = "You find it helpful to externalize your thoughts in the form of speaking or writing.  This helps\n" +
+                " you put the jumbled mess in your head into logical and working order so you can understand and\n" +
+                " utilize it.";
         String f11 = "Te";
         FunctionData fd11 = new FunctionData(q11, f11,0);
         questions.add(fd11);
 
-        String q12 = "You recognize, understand, and appreciate external systems such as the scientific method, but you have\n" +
-                " no problem restructuring these systems if you see them as inefficient.  Tasks such as this are even\n" +
-                " enjoyable to you.";
+        String q12 = "You recognize, understand, and appreciate external systems such as the scientific method.\n";
         String f12 = "Te";
         FunctionData fd12 = new FunctionData(q12, f12,0);
         questions.add(fd12);
@@ -341,6 +342,7 @@ public class QuestionBank {
     }
 
     // Setter method goes through the question bank, incrementing count of cognitive functions
+    // Also stores a value of total points
     public void setFunctionCount()
     {
         for(int i = 0; i < questions.size(); i++)
@@ -349,10 +351,12 @@ public class QuestionBank {
             if(functionCount.get(cogFunc) == null)
             {
                 functionCount.put(cogFunc, questions.get(i).score);
+                totalPoints += questions.get(i).score;
             }
             else
             {
                 functionCount.put(cogFunc, functionCount.get(cogFunc) + questions.get(i).score);
+                totalPoints += questions.get(i).score;
             }
         }
     }
@@ -371,7 +375,8 @@ public class QuestionBank {
     {
         for(String func : functionCount.keySet())
         {
-            System.out.println(func + ": " + 240.0/functionCount.get(func) + "%");
+            System.out.println(func + ": " + (functionCount.get(func)/(double)totalPoints)*100.0 + "%");
         }
+        System.out.println("\n");
     }
 }
