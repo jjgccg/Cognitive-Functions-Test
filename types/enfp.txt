@@ -1,5 +1,5 @@
 [ENFP]
-Extroverted Intuition (Ne):
-Introverted Feeling (Fi):
-Extroverted Thinking (Te):
-Introverted Sensing (Si):
+Extroverted Intuition (Ne): The ENFP is captivated by ideas and connections in the external world, stimulated by new information and experiences. Combined with auxiliary Fi, the ENFP is an explorer of values and meaning.
+Introverted Feeling (Fi): Auxiliary Fi gives the ENFP a disposition towards valuing and considering what is important to them in their life and what they hold are true to themselves.  Development of Fi values is important to ENFP growth.
+Extroverted Thinking (Te): Tertiary Te manifests itself in the ENFP through striving to externally organize the environment to meet goals that their auxiliary Fi has deemed as important.
+Introverted Sensing (Si): Inferior Si manifests itself in the ENFP through their disposition to gloss over details in favor of the bigger picture. Furthermore, when in a state of stress, ENFPs may get stuck in recollection of bad experiences from the past.

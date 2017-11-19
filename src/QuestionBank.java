@@ -2,12 +2,23 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
+/**
+ * Question Bank Object
+ *
+ * A Question Bank contains all questions for the function test, as well as capabilities to
+ * calculate the users responses yo questions and print out the functions and their percentage
+ * from this calculation.
+ *
+ * @author Joseph George
+ */
 public class QuestionBank {
     private ArrayList<FunctionData> questions;
     private HashMap<String, Integer> functionCount;
     private int totalPoints;
 
-    /* Default constructor stores all 48 questions into class variable*/
+    /**
+     * Default constructor
+     */
     public QuestionBank()
     {
         this.questions = new ArrayList<FunctionData>();
@@ -15,7 +26,10 @@ public class QuestionBank {
         this.totalPoints = 0;
     }
 
-    // Initialize all 48 questions with their associated function
+
+    /**
+     * Stores all 48 questions into object instance, along with their associated function.
+     */
     public void setQuestions()
     {
         //Ti
@@ -40,7 +54,7 @@ public class QuestionBank {
         FunctionData fd3 = new FunctionData(q3, f3,0);
         questions.add(fd3);
 
-        String q4 = "You are someone who constantly asks questions to developer a more complete understanding.  Overall, \n" +
+        String q4 = "You are someone who constantly asks questions to develop a more complete understanding.  Overall, \n" +
                 "this may be traced to the fact that you always feel like you're missing some vital piece of knowledge that\n" +
                 " will complete your own puzzle.";
         String f4 = "Ti";
@@ -92,7 +106,7 @@ public class QuestionBank {
         FunctionData fd11 = new FunctionData(q11, f11,0);
         questions.add(fd11);
 
-        String q12 = "You recognize, understand, and appreciate external systems such as the scientific method.\n";
+        String q12 = "You recognize, understand, and appreciate external systems such as the scientific method.";
         String f12 = "Te";
         FunctionData fd12 = new FunctionData(q12, f12,0);
         questions.add(fd12);
@@ -343,6 +357,10 @@ public class QuestionBank {
 
     // Setter method goes through the question bank, incrementing count of cognitive functions
     // Also stores a value of total points
+
+    /**
+     * Sets the count of all functions based on user input.
+     */
     public void setFunctionCount()
     {
         for(int i = 0; i < questions.size(); i++)
@@ -361,16 +379,30 @@ public class QuestionBank {
         }
     }
 
+    /**
+     * Returns an initialized set of questions for an object instance.
+     *
+     * @return an initialized set of questions
+     */
     public ArrayList<FunctionData> getQuestions()
     {
         return questions;
     }
 
+    /**
+     * Returns the set of functions and their associated count.
+     *
+     * @return the set of functions and their associated count
+     */
     public HashMap<String, Integer> getFunctionCount()
     {
         return functionCount;
     }
 
+    /**
+     * Prints out each function along with the associated percentage of the function based on the numerical
+     * responses of the user.
+     */
     public void printFunctionCount()
     {
         for(String func : functionCount.keySet())

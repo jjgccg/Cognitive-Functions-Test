@@ -1,7 +1,11 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * Main class creates appropriate object for user to take the quiz and then calculates the results.
+ *
+ * @author Joseph George
+ */
 public class main
 {
     public static void main(String[] args)

@@ -1,28 +1,44 @@
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.HashMap;
 
+/**
+ * Type Writer Object
+ *
+ * A Type Writer is responsible for doing two things: determining the type of the user taking the test and then
+ * printing out the info of this type.
+ *
+ * @author Joseph George
+ */
 public class TypeWriter
 {
     private HashMap<String, Integer> funcCount;
     private static String type;
 
+    /**
+     * Default constructor
+     */
     public TypeWriter()
     {
         funcCount = new HashMap<String, Integer>();
         type = "";
     }
 
+    /**
+     * Constructor
+     * @param funcCount contains functions with their summed counts from user input for questions.
+     */
     public TypeWriter(HashMap<String, Integer> funcCount)
     {
         this.funcCount = funcCount;
         type = "";
     }
 
-    //TODO: Find more sophisticated way to calculate type if there are two dominant functions
-    // Finds the dominant function and then the auxiliary based off of that
+    /**
+     * Finds the dominant function based on user scores, and then find the auxiliary function and hence the type.
+     */
     public void findDomAndAux() {
+        //TODO: Find more sophisticated way to calculate type if there are two dominant functions
         // Find dominant function
         String dom = "";
         int maxCount = 0;
@@ -95,6 +111,9 @@ public class TypeWriter
         }
     }
 
+    /**
+     * Prints out the type of the user.
+     */
     public void printType()
     {
         String file = "C:/Users/Joe/IdeaProjects/CognitiveFunctionTest/types/" + type + ".txt";
