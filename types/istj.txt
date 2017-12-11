@@ -1,10 +1,5 @@
 [ISTJ]
-Introverted Sensing (Si): The ISTJ is first and foremost a perceiver of concrete information and experiences, seeking to develop a reliable internal
-                          framework of their life which they can access in order to make decisions about the present moment.
-Extroverted Thinking (Te): Auxiliary Te, combined with dominant Si, makes the ISTJ a methodical and grounded "doer" by providing them with a knack
-                           for using external systems to affect change and reach goals in the outside world, backed up by information from Si.
-Introverted Feeling (Fi): Tertiary Fi provides the ISTJ with their own sense of what is right and wrong - what they value and what is not important
-                          - but their Te function often takes precedence over the emotions and values they aren't comfortable with expressing.
-Extroverted Intuition (Ne): Inferior Ne manifests itself in the ISTJ as a general fear of the unknown, novel, and strange, and sometimes makes
-                            them closed off to new ideas or ways of thinking.  When stressed, the ISTJ often imagines the worst possible outcomes
-                            of the future that they cannot predict or know.
+Introverted Sensing (Si): The ISTJ is first and foremost a perceiver of concrete information and experiences, seeking to develop a reliable 					          internal framework of their life which they can access in order to make decisions about the present moment.
+Extroverted Thinking (Te): Auxiliary Te, combined with dominant Si, makes the ISTJ a methodical and grounded "doer" by providing them with a knack 						      for using external systems to affect change and reach goals in the outside world, backed up by information from Si.
+Introverted Feeling (Fi): Tertiary Fi provides the ISTJ with their own sense of what is right and wrong - what they value and what is not 								  important - but their Te function often takes precedence over the emotions and values they aren't comfortable with 							  expressing.
+Extroverted Intuition (Ne): Inferior Ne manifests itself in the ISTJ as a general fear of the unknown, novel, and strange, and sometimes makes 								them closed off to new ideas or ways of thinking.  When stressed, the ISTJ often imagines the worst possible outcomes							 of the future that they cannot predict or know.

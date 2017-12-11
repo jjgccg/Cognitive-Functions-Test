@@ -30,6 +30,11 @@ public class main
         {
             System.out.println(quizQuestions.get(i).question);
             int userScore = reader.nextInt();
+            while(userScore < 1 || userScore > 5)
+            {
+                System.out.println("You can't read, lol.  Input must be an integer  between 1 and 5.");
+                userScore = reader.nextInt();
+            }
             quizQuestions.get(i).score = userScore;
         }
         System.out.println("\n");
